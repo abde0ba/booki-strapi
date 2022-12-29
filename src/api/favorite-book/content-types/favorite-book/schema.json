@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_books",
+  "info": {
+    "singularName": "favorite-book",
+    "pluralName": "favorite-books",
+    "displayName": "Favorite Book"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
